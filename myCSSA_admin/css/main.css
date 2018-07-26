@@ -1,0 +1,25 @@
+.page__hd {
+    padding: 40px;
+}
+
+.page__title {
+    text-align:center;
+    font-size: 18px;
+    font-weight: 400;
+    color:skyblue;
+}
+
+.page__subt{
+    text-align:center;
+    font-size: 14px;
+    font-weight: 200;
+    
+}
+
+.go-button{
+    width: 300px;
+}
+
+.container{
+    padding: 20px;
+}

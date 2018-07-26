@@ -1,0 +1,28 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var ws = new WebSocket("wss://cssaunimelb.com/wsapp/");
+        console.log(ws);
+        ws.onopen = function() {
+            ws.send("node.js，您好呀");
+            alert("数据发送中...");
+        };
+
+        ws.onmessage = function(evt) {
+            var received_msg = evt.data;
+            alert("数据已接收..." + received_msg);
+            console.log(received_msg, JSON.parse(received_msg));
+        };
+
+        ws.onclose = function() {
+            // 关闭 websocket
+            alert("连接已关闭...");
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<template>
+  <view>MemberRegister Page</view>
+</template>
+
+<script>
+export default {
+  config: {
+    navigationBarTitleText: '新会员注册',
+    usingComponents: {}
+  },
+  data: {}
+}
+</script>
+
+<style>
+</style>

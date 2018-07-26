@@ -1,0 +1,18 @@
+.head {
+  height: 10%;
+  background-color:#16b5dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.public-head{
+  padding: 2rpx;
+  text-align: center;
+}
+
+
+.index-desc {
+  margin-top: 5rpx;
+  color:white;
+  font-size: 28rpx;
+}

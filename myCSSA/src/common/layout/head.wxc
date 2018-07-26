@@ -1,0 +1,33 @@
+<template>
+  <view class="head">
+    <view class="public-head">
+    <view class="index-desc"> myCSSA-小程序 </view>
+    </view>
+  </view>
+</template>
+
+<script>
+export default {
+}
+</script>
+
+<style>
+.head {
+  height: 10%;
+  background-color:#16b5dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.public-head{
+  padding: 2rpx;
+  text-align: center;
+}
+
+
+.index-desc {
+  margin-top: 5rpx;
+  color:white;
+  font-size: 28rpx;
+}
+</style>

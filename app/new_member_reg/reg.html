@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>新会员注册</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.1/weui.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/jquery-weui.min.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="page__hd">
+            <h1 class="page__title">新会员自助注册</h1>
+            <p>请使用真实信息，填写以下表格的全部项目</p>
+        </div>
+        <div id="regform">
+            <div class="weui-cells__title">个人基本信息</div>
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">姓</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input name="surname" class="weui-input" type="text" placeholder="请输入姓氏拼音" onkeyup="this.value=this.value.replace(/[^a-zA-Z]/g,'')"
+                        />
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">名</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input name="firstname" class="weui-input" type="text" placeholder="请输入名字拼音" onkeyup="this.value=this.value.replace(/[^a-zA-Z]/g,'')"
+                        />
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label for="" class="weui-label">生日</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input name="dob" class="weui-input" type="date" placeholder="请填入您的生日" />
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label for="" class="weui-label">性别</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <select id="gender" class="weui-select" name="gender">
+                            <option value="O">其他/保密</option>
+                            <option value="M">男</option>
+                            <option value="F">女</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="weui-cells__title">学籍信息</div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">学生证号</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input name="studentid" class="weui-input" type="text" maxlength="7" placeholder="请输入6位学生证号" onkeyup="value=this.value.replace(/\D+/g,'')"
+                        />
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label for="" class="weui-label">有效期</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input name="expire" class="weui-input" type="date" placeholder="请填写您的学生证有效期" />
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">学校邮箱</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input name="studentmail" class="weui-input" type="text" placeholder="" onKeyUp="value=value.replace(/[\W]/g,'')" />
+                        <span>@student.unimelb.edu.au</span>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">专业方向</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input name="faculty" class="weui-input" type="text" id="major-picker" placeholder="请选择您的专业方向" />
+                    </div>
+                </div>
+
+
+                <div class="weui-cells__title">联系方式</div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">电话号码</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input id="telnum" name="telnum" class="weui-input" type="text" maxlength="10" onkeyup="value=this.value.replace(/\D+/g,'')"
+                            placeholder="04XX XXX XXX" />
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">住址邮编</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input name="postcode" class="weui-input" type="text" maxlength="4" onkeyup="value=this.value.replace(/\D+/g,'')" placeholder="请输入4位澳洲邮政编码"
+                        />
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">籍贯</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input id="origin-picker" name="origin" class="weui-input" type="text" placeholder="您从祖国何处来?" />
+                    </div>
+                </div>
+                <label for="weuiAgree" class="weui-agree">
+                    <input id="weuiAgree" type="checkbox" class="weui-agree__checkbox" onChange="alterstate();">
+                    <span class="weui-agree__text">
+                        我确认以上信息真实准确，并理解提供不实信息会导致会员资格被注销
+                    </span>
+                </label>
+            </div>
+            <div class="weui-btn-area">
+                <button id="upload_button" class="weui-btn weui-btn_default" onclick="onClick();" disabled="disabled">请勾选上方选项</button>
+            </div>
+            <div class="weui-footer">
+                <p class="weui-footer__text">Copyright © 2018 墨尔本大学中国学生会信息部</p>
+            </div>
+        </div>
+
+        <script type="application/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery-weui.min.js"></script>
+        <script src="js/city-picker.min.js" charset="utf-8"></script>
+        <script src="js/unimelb-major-picker.js" charset="utf-8"></script>
+        <script src="js/paging.js"></script>
+        <script>
+            $("#origin-picker").cityPicker();
+            
+            if (getUrlVariable("telnum")){ 
+                $("#telnum").val(getUrlVariable("telnum"));
+            };
+            
+            function alterstate() {
+                if ($("#upload_button").attr("disabled")) {
+                    $("#upload_button").attr("class", "weui-btn weui-btn_primary");
+                    $("#upload_button").removeAttr("disabled");
+                    $("#upload_button").text("确认提交");
+                } else {
+                    $("#upload_button").attr("class", "weui-btn weui-btn_default");
+                    $("#upload_button").attr("disabled", "disabled");
+                    $("#upload_button").text("请勾选上方确认条款");
+                }
+            };
+            history.go(1); 
+        </script>
+
+</body>
+
+</html>

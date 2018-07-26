@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "layout-head": "../../common/layout/head",
+    "layout-foot": "../../common/layout/foot",
+    "wxc-flex": "../../packages/@minui/wxc-flex/dist/index",
+    "wxc-avatar": "../../packages/@minui/wxc-avatar/dist/index",
+    "wxc-button": "../../packages/@minui/wxc-button/dist/index",
+    "wxc-badge": "../../packages/@minui/wxc-badge/dist/index",
+    "wxc-cc": "../../packages/@minui/wxc-cc/dist/index"
+  }
+}

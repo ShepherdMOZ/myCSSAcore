@@ -1,0 +1,69 @@
+<view>
+    <layout-head _pid="{{_pid}}">
+
+    </layout-head>
+
+    <!-- wxp template -->
+    <view class="page">
+        <view class="index-hd"></view>
+        <view class="index-bd">
+            <view class="user-banner">
+                <wxc-flex class="line-wrap" _pid="{{_pid}}">
+                    <wxc-avatar class="avatar" count="7" src="https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg" _pid="{{_pid}}"></wxc-avatar>
+                    <view class="user-info">
+                        <text class="user-name" style="display:block; text-align:left;font-size: 36rpx;">下午好, Alice</text>
+                        <text class="user-name" style="display:block; text-align:left;font-size:20rpx;">当前会员积分：65536</text>
+                        <wxc-button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" _pid="{{_pid}}">调试用户授权</wxc-button>
+                    </view>
+                </wxc-flex>
+            </view>
+
+            <wxc-flex class="wrap" main="center" cross="center" wrap="wrap" _pid="{{_pid}}">
+                <wxc-cc class="item" _pid="{{_pid}}">
+                    <view class="menu-wrapper">
+                        <image class="menu-avatar" src="../../common/assets/menu-icon/event.png"> </image>
+                        <view class="menu-name">活动报名</view>
+                    </view>
+                </wxc-cc>
+                <wxc-cc class="item" _pid="{{_pid}}">
+                    <view class="menu-wrapper">
+                        <image class="menu-avatar" src="../../common/assets/menu-icon/payment.png"> </image>
+                        <view class="menu-name">凭证上传</view>
+                    </view>
+                </wxc-cc>
+                <wxc-cc class="item" _pid="{{_pid}}">
+                    <view class="menu-wrapper">
+                        <image class="menu-avatar" src="../../common/assets/menu-icon/discount.png"> </image>
+                        <view class="menu-name">商家优惠</view>
+                    </view>
+                </wxc-cc>
+
+                <wxc-cc class="item" _pid="{{_pid}}">
+                    <view class="menu-wrapper">
+                        <image class="menu-avatar" src="../../common/assets/menu-icon/memberinfo.png"> </image>
+                        <view class="menu-name">会员管理</view>
+                    </view>
+                </wxc-cc>
+                <wxc-cc class="item" _pid="{{_pid}}">
+                    <view class="menu-wrapper">
+                        <image class="menu-avatar" src="../../common/assets/menu-icon/accountmgr.png"> </image>
+                        <view class="menu-name">账号管理</view>
+                    </view>
+                </wxc-cc>
+                <wxc-cc class="item" _pid="{{_pid}}"></wxc-cc>
+            </wxc-flex>
+
+            <view class="newsfeed">
+                新闻源
+            </view>
+        </view>
+
+
+        <view class="index-ft">
+            <view class="provider"></view>
+        </view>
+
+    </view>
+
+    <layout-foot _pid="{{_pid}}"></layout-foot>
+</view>

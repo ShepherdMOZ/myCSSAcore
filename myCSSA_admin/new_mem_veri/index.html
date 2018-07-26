@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>会员验证</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.3/weui.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="page__hd">
+            <h1 class="page__title">会员验证</h1>
+        </div>
+    </div>
+    <div class="container operating_area">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label" onchange="checkValidity();">手机号码</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input id="telnum" class="weui-input" type="text" pattern="[0-9]{6}" maxlength="10" placeholder="04XX XXX XXX" onkeyup="value=this.value.replace(/\D+/g,'')"
+                />
+            </div>
+        </div>
+        <div class="weui-cells__tips">仅限于使用自助注册的新会员</div>
+        <div class="weui-btn-area">
+            <button class="weui-btn weui-btn_default" id="proceed" disabled="disabled" onclick="onClick();">请输入</button>
+        </div>
+    </div>
+    <div class="container">
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $("#telnum").bind('keyup', function () {
+            if ($("#telnum").val().length == 10) {
+                //$.ajax()远程获取json数据
+                $.ajax({
+                    type: "POST",
+                    url: "https://cssaunimelb.com/ajax/check_id",
+                    //dataType: 'jsonp',
+                    crossDomain: true,
+                    data: {
+                        //请按照ALICE引擎请求规范填写
+                        verb: "CHECK VALID",
+                        noun: "newmember_quene",
+                        field: "telnum",
+                        value: $("#telnum").val()
+                    },
+                    success: function (response, status, xhr) {
+                        console.log(response);
+                        if (response == "Valid") {
+                            $("#proceed").text("核验");
+                            $("#proceed").attr("class", "weui-btn weui-btn_primary");
+                            $("#proceed").removeAttr("disabled");
+                        };
+                        if (response == "Invalid") {
+                            $("#proceed").text("查无此号");
+                            $("#proceed").attr("class", "weui-btn weui-btn_default");
+                            $("#proceed").attr("disabled", "disabled");
+                        };
+                    }
+                });
+            } else {
+                $("#proceed").text("请输入");
+                $("#proceed").attr("class", "weui-btn weui-btn_default");
+                $("#proceed").attr("disabled", "disabled");
+            };
+        });
+    function onClick(){
+        window.location.href="./confirmation.html?telnum=" + $("#telnum").val(); 
+    }
+    history.go(1); 
+    </script>
+
+</body>
+
+</html>

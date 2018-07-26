@@ -1,0 +1,133 @@
+{'type': 'course_list', 'name': 'Undergraduate', 'items': [
+        {'item_name': 'Bachelor of BiomedicineB-BMED', 'item_url': '/2018/courses/b-bmed'
+        },
+        {'item_name': 'Bachelor of AgricultureB-AGR', 'item_url': '/2018/courses/b-agr'
+        },
+        {'item_name': 'Bachelor of ScienceB-SCI', 'item_url': '/2018/courses/b-sci'
+        },
+        {'item_name': 'Bachelor of DesignB-DES', 'item_url': '/2018/courses/b-des'
+        },
+        {'item_name': 'Bachelor of CommerceB-COM', 'item_url': '/2018/courses/b-com'
+        },
+        {'item_name': 'Bachelor of EnvironmentsB-ENVS', 'item_url': '/2018/courses/b-envs'
+        },
+        {'item_name': 'Bachelor of MusicB-MUS', 'item_url': '/2018/courses/b-mus'
+        },
+        {'item_name': 'Bachelor of ArtsB-ARTS', 'item_url': '/2018/courses/b-arts'
+        },
+        {'item_name': 'Bachelor of Arts (Extended)B-ARTSEXT', 'item_url': '/2018/courses/b-artsext'
+        },
+        {'item_name': 'Bachelor of Commerce (Degree with Honours)BH-COM', 'item_url': '/2018/courses/bh-com'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Dance)B-FADANCE', 'item_url': '/2018/courses/b-fadance'
+        },
+        {'item_name': 'Bachelor of Science (Extended)B-SCIEXT', 'item_url': '/2018/courses/b-sciext'
+        },
+        {'item_name': 'Diploma in MusicD-MUSIC', 'item_url': '/2018/courses/d-music'
+        },
+        {'item_name': 'Diploma in InformaticsD-INFO', 'item_url': '/2018/courses/d-info'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Degree with Honours)BH-FA', 'item_url': '/2018/courses/bh-fa'
+        },
+        {'item_name': 'Bachelor of Agriculture (Degree with Honours)BH-AGR', 'item_url': '/2018/courses/bh-agr'
+        },
+        {'item_name': 'Diploma in General StudiesD-GENST', 'item_url': '/2018/courses/d-genst'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Film and Television)B-FAFILMTV', 'item_url': '/2018/courses/b-fafilmtv'
+        },
+        {'item_name': 'Bachelor of Arts (Degree with Honours)BH-ARTS', 'item_url': '/2018/courses/bh-arts'
+        },
+        {'item_name': 'Bachelor of Environments (Degree with Honours)BH-ENVS', 'item_url': '/2018/courses/bh-envs'
+        },
+        {'item_name': 'Bachelor of BiomedicineB-BMED', 'item_url': '/2018/courses/b-bmed'
+        },
+        {'item_name': 'Bachelor of AgricultureB-AGR', 'item_url': '/2018/courses/b-agr'
+        },
+        {'item_name': 'Bachelor of ScienceB-SCI', 'item_url': '/2018/courses/b-sci'
+        },
+        {'item_name': 'Bachelor of DesignB-DES', 'item_url': '/2018/courses/b-des'
+        },
+        {'item_name': 'Bachelor of CommerceB-COM', 'item_url': '/2018/courses/b-com'
+        },
+        {'item_name': 'Bachelor of EnvironmentsB-ENVS', 'item_url': '/2018/courses/b-envs'
+        },
+        {'item_name': 'Bachelor of MusicB-MUS', 'item_url': '/2018/courses/b-mus'
+        },
+        {'item_name': 'Bachelor of ArtsB-ARTS', 'item_url': '/2018/courses/b-arts'
+        },
+        {'item_name': 'Bachelor of Arts (Extended)B-ARTSEXT', 'item_url': '/2018/courses/b-artsext'
+        },
+        {'item_name': 'Bachelor of Commerce (Degree with Honours)BH-COM', 'item_url': '/2018/courses/bh-com'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Dance)B-FADANCE', 'item_url': '/2018/courses/b-fadance'
+        },
+        {'item_name': 'Bachelor of Science (Extended)B-SCIEXT', 'item_url': '/2018/courses/b-sciext'
+        },
+        {'item_name': 'Diploma in MusicD-MUSIC', 'item_url': '/2018/courses/d-music'
+        },
+        {'item_name': 'Diploma in InformaticsD-INFO', 'item_url': '/2018/courses/d-info'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Degree with Honours)BH-FA', 'item_url': '/2018/courses/bh-fa'
+        },
+        {'item_name': 'Bachelor of Agriculture (Degree with Honours)BH-AGR', 'item_url': '/2018/courses/bh-agr'
+        },
+        {'item_name': 'Diploma in General StudiesD-GENST', 'item_url': '/2018/courses/d-genst'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Film and Television)B-FAFILMTV', 'item_url': '/2018/courses/b-fafilmtv'
+        },
+        {'item_name': 'Bachelor of Arts (Degree with Honours)BH-ARTS', 'item_url': '/2018/courses/bh-arts'
+        },
+        {'item_name': 'Bachelor of Environments (Degree with Honours)BH-ENVS', 'item_url': '/2018/courses/bh-envs'
+        },
+        {'item_name': 'Bachelor of Music (Degree with Honours)BH-MUS', 'item_url': '/2018/courses/bh-mus'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Acting)B-FAACTING', 'item_url': '/2018/courses/b-faacting'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Production)B-FAPROD', 'item_url': '/2018/courses/b-faprod'
+        },
+        {'item_name': 'Diploma in Mathematical SciencesD-MATHSC', 'item_url': '/2018/courses/d-mathsc'
+        },
+        {'item_name': 'Bachelor of Biomedicine (Degree with Honours)BH-BMED', 'item_url': '/2018/courses/bh-bmed'
+        },
+        {'item_name': 'Diploma in LanguagesD-LANG', 'item_url': '/2018/courses/d-lang'
+        },
+        {'item_name': 'Bachelor of Oral Health (Degree with Honours)BH-ORHLTH', 'item_url': '/2018/courses/bh-orhlth'
+        },
+        {'item_name': 'Bachelor of Science (Degree with Honours)BH-SCI', 'item_url': '/2018/courses/bh-sci'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Screenwriting)B-FASCWRI', 'item_url': '/2018/courses/b-fascwri'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Animation)B-FAANIM', 'item_url': '/2018/courses/b-faanim'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Visual Art)B-FAVISART', 'item_url': '/2018/courses/b-favisart'
+        },
+        {'item_name': 'U21 Diploma in Global IssuesD-GLOBISS', 'item_url': '/2018/courses/d-globiss'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Theatre)B-FATH', 'item_url': '/2018/courses/b-fath'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Music Theatre)B-FAMUSTH', 'item_url': '/2018/courses/b-famusth'
+        },
+        {'item_name': 'U21 Certificate in Global Issues777CC', 'item_url': '/2018/courses/777cc'
+        },
+        {'item_name': 'Bachelor of Oral Health841AC', 'item_url': '/2018/courses/841ac'
+        },
+        {'item_name': 'Bachelor of Medical Science565IN', 'item_url': '/2018/courses/565in'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Contemporary Music)B-FACONTMU', 'item_url': '/2018/courses/b-facontmu'
+        },
+        {'item_name': 'Diploma in Music (Practical)D-MUS', 'item_url': '/2018/courses/d-mus'
+        },
+        {'item_name': 'Bachelor of Fine Arts (Theatre Practice)B-FATHPRAC', 'item_url': '/2018/courses/b-fathprac'
+        },
+        {'item_name': 'Bachelor of EngineeringB-ENG', 'item_url': '/2018/courses/b-eng'
+        },
+        {'item_name': 'Associate Degree in Urban HorticultureA-URBHORT', 'item_url': '/2018/courses/a-urbhort'
+        },
+        {'item_name': 'Bachelor of Arts105AA', 'item_url': '/2018/courses/105aa'
+        },
+        {'item_name': 'Bachelor of Music Performance (Degree with Honours)734AA', 'item_url': '/2018/courses/734aa'
+        },
+        {'item_name': 'Bachelor of Agriculture315PD', 'item_url': '/2018/courses/315pd'
+        }
+    ]
+}

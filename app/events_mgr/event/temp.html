@@ -1,0 +1,26 @@
+$.ajax({
+    type: "POST",
+    url: "https://cssaunimelb.com/ajax/check_id",
+    //dataType: 'jsonp',
+    crossDomain: true,
+    data: {
+      //请按照ALICE引擎请求规范填写
+      verb: "CHECK VALID",
+      noun: "user_info",
+      field: "telnum",
+      value: $("#telnum").val()
+    },
+    success: function (response, status, xhr) {
+      console.log(response);
+      if (response == "Valid") {
+        $("#togo").text("注册活动");
+        $("#togo").removeAttr("disabled");
+        next_uri = "../proceed_reg.html?event_id=1&telnum="+$("#telnum").val();
+      };
+      if (response == "Invalid") {
+        $("#togo").text("您的会员身份未激活，点此处理");
+        $("#togo").removeAttr("disabled");
+        next_uri ="/app/new_member_reg/reg.html?event_id=1&telnum="+$("#telnum").val();
+      };
+    }
+  });

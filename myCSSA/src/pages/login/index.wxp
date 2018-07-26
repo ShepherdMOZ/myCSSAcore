@@ -1,0 +1,16 @@
+<template>
+  <view>Login Page</view>
+</template>
+
+<script>
+export default {
+  config: {
+    navigationBarTitleText: '登陆',
+    usingComponents: {}
+  },
+  data: {}
+}
+</script>
+
+<style>
+</style>

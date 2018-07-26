@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>myCSSA-活动报名</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.3/weui.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="success" class="weui-msg" style="display: none;">
+            <div class="weui-msg__icon-area">
+                <i id="reg-status-icon" class="weui-icon-success weui-icon_msg"></i>
+            </div>
+            <div class="weui-msg__text-area">
+                <h2 id="reg-status" class="weui-msg__title">注册成功</h2>
+                <div class="addtional-info">
+                    <p style="text-align: left;">
+                        请您于7月26号（周四）下午5点准时登记入场。因为人数的限制，迟到可能会无法保留您的席位，希望您能够准时参与~
+                        </br>
+                        </br>
+                        地点：Drill Hall, 26 Terry St
+                        </br>
+                        时间：7月26号 5:00PM
+                        </br>
+                        凭该页面截屏入场，请保存
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="waiting" class="weui-msg" style="display: none;">
+            <div class="weui-msg__icon-area">
+                <i id="reg-status-icon" class="weui-icon-waiting weui-icon_msg"></i>
+            </div>
+            <div class="weui-msg__text-area">
+                <h2 id="reg-status" class="weui-msg__title">报名人数已满</h2>
+                <div class="addtional-info">
+                    <p style="text-align: left;">
+                        抱歉，目前报名人数已超过场地的最大容纳量
+                        </br>
+                        </br>
+                        您的信息已被收入进waiting list，当有额外名额时将会以电话或短信告知您
+                        </br>
+                        感谢您的参与
+                        </br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="warning" class="weui-msg" style="display: none;">
+            <div class="weui-msg__icon-area">
+                <i id="reg-status-icon" class="weui-icon-warn weui-icon_msg"></i>
+            </div>
+            <div class="weui-msg__text-area">
+                <h2 id="reg-status" class="weui-msg__title">注册异常</h2>
+                <div class="addtional-info">
+                    <p style="text-align: left;">
+                        抱歉，我们无法完成您的注册请求，请联系CSSA小助手
+                        </br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="weui-msg__extra-area">
+            <div class="weui-footer">
+                <p class="weui-footer__links">
+                    <a href="javascript:void(0);" class="weui-footer__link"></a>
+                </p>
+                <p class="weui-footer__text">Copyright © 2018 墨尔本大学中国学生会信息部</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/paging.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        regEvent();
+    </script>
+</body>

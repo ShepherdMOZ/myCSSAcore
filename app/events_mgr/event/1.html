@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CSSA 2018第二学期迎新会</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+  <script src="../js/main.js"></script>
+</head>
+
+<body>
+  <ons-page id="event-detail">
+    <ons-toolbar>
+      <div class="left">
+        <!-- <ons-toolbar-button icon="md-face"></ons-toolbar-button> -->
+      </div>
+      <div class="center"> CSSA 2018第二学期迎新会 </div>
+      <div class="right">
+      </div>
+    </ons-toolbar>
+    <div id="detial-information">
+      <ons-card>
+        <img src="./28.jpeg" alt="Onsen UI" style="width: 100%">
+        <ons-list>
+          <ons-list-header>活动详情</onså-list-header>
+            <ons-list-item>时间：2018年7月26日 5:00pm</ons-list-item>
+            <ons-list-item>地点：Drill Hall, 26 Terry St, Melbourne</ons-list-item>
+            <ons-list-item>名额：160人</ons-list-item>
+        </ons-list>
+    </div>
+    </ons-card>
+    </div>
+
+    <section style="padding: 10px; text-align: center;">
+      <label for="telnum">请输入您注册时用的电话号码</label>
+      <ons-input id="telnum" modifier="underbar" placeholder="" onkeyup="value=this.value.replace(/\D+/g,'')" maxlength="10"></ons-input>
+      <p></p>
+      <ons-button id="togo" modifier="large" disabled="true" onclick="toReg();">
+        请输入电话</ons-button>
+      <!-- <p style="text-align: center;">开始于2018年7月22日 8:00pm</p> -->
+    </section>
+  </ons-page>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  <script>
+    var next_uri = "";
+    $("#telnum").bind('keyup', function () {
+      if ($("#telnum").val().length == 10) {
+        //$.ajax()远程获取json数据
+        $.ajax({
+          type: "POST",
+          url: "https://cssaunimelb.com/ajax/check_id",
+          //dataType: 'jsonp',
+          crossDomain: true,
+          data: {
+            //请按照ALICE引擎请求规范填写
+            verb: "CHECK VALID",
+            noun: "event_user_reg",
+            field: "applicant_telnum",
+            value: $("#telnum").val()
+          },
+          success: function (response, status, xhr) {
+            console.log(response);
+            if (response == "Valid") {
+              $("#togo").text("该号码已报名");
+              $("#togo").attr('style','background-color:green;');
+            };
+            if (response == "Invalid") {
+              $.ajax({
+                type: "POST",
+                url: "https://cssaunimelb.com/ajax/check_id",
+                //dataType: 'jsonp',
+                crossDomain: true,
+                data: {
+                  //请按照ALICE引擎请求规范填写
+                  verb: "CHECK VALID",
+                  noun: "user_info",
+                  field: "telnum",
+                  value: $("#telnum").val()
+                },
+                success: function (response, status, xhr) {
+                  console.log(response);
+                  if (response == "Valid") {
+                    $("#togo").text("注册活动");
+                    $("#togo").removeAttr("disabled");
+                    next_uri = "../proceed_reg.html?event_id=1&telnum=" + $("#telnum").val();
+                  };
+                  if (response == "Invalid") {
+                    $("#togo").text("您的会员身份未激活，点此处理");
+                    $("#togo").removeAttr("disabled");
+                    next_uri = "/app/new_member_reg/reg.html?event_id=1&telnum=" + $("#telnum").val();
+                  };
+                }
+              });
+            };
+          }
+        });
+      } else {
+        $("#togo").text("请输入电话");
+        $("#togo").attr("disabled", "true");
+      };
+    });
+    function toReg() {
+      window.location.href = next_uri;
+    };
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+[
+    ['all', 'All departments'
+    ],
+    ['3060', 'Accounting'
+    ],
+    ['2080', 'Agriculture and Food Systems'
+    ],
+    ['5160', 'Anatomy and Neuroscience'
+    ],
+    ['1100', 'Asia Institute'
+    ],
+    ['5770', 'Audiology and Speech Pathology'
+    ],
+    ['5210', 'Biochemistry and Molecular Biology'
+    ],
+    ['6300', 'BioSciences'
+    ],
+    ['5070', 'Centre for Youth Mental Health'
+    ],
+    ['4110', 'Chemical and Biomolecular Engineering'
+    ],
+    ['6100', 'Chemistry'
+    ],
+    ['4180', 'Computing and Information Systems'
+    ],
+    ['1060', 'Culture and Communication'
+    ],
+    ['6250', 'Earth Sciences'
+    ],
+    ['3160', 'Economics'
+    ],
+    ['2200', 'Ecosystem and Forest Sciences'
+    ],
+    ['4310', 'Electrical and Electronic Engineering'
+    ],
+    ['3330', 'Finance'
+    ],
+    ['5850', 'General Practice'
+    ],
+    ['2070', 'Geography and Resource Management'
+    ],
+    ['3040', 'Graduate School of Business and Economics'
+    ],
+    ['1310', 'Historical and Philosophical Studies'
+    ],
+    ['4320', 'Infrastructure Engineering'
+    ],
+    ['1190', 'Languages and Linguistics'
+    ],
+    ['7300', 'Law'
+    ],
+    ['3250', 'Management and Marketing'
+    ],
+    ['6200', 'Mathematics and Statistics'
+    ],
+    ['4360', 'Mechanical Engineering'
+    ],
+    ['5970', 'Medical Biology (W.E.H.I.)'
+    ],
+    ['5430', 'Medicine - Austin Health'
+    ],
+    ['5530', 'Medicine - Royal Melbourne Hospital'
+    ],
+    ['5630',
+        "Medicine - St Vincent's Hospital"
+    ],
+    ['7420', 'Melbourne Conservatorium of Music'
+    ],
+    ['5260', 'Microbiology and Immunology'
+    ],
+    ['5090', 'Nossal Institute for Global Health'
+    ],
+    ['5140', 'Nursing'
+    ],
+    ['6550', 'Optometry and Vision Sciences'
+    ],
+    ['5200', 'Otolaryngology'
+    ],
+    ['5710',
+        "Paediatrics Royal Children's Hospital"
+    ],
+    ['5310', 'Pathology'
+    ],
+    ['5340', 'Pharmacology and Therapeutics'
+    ],
+    ['6400', 'Physics'
+    ],
+    ['5360', 'Physiology'
+    ],
+    ['5130', 'Physiotherapy'
+    ],
+    ['5540', 'Psychiatry'
+    ],
+    ['5550', 'Radiology'
+    ],
+    ['1660', 'Social and Political Sciences'
+    ],
+    ['1960', 'Social Work'
+    ],
+    ['5460', 'Surgery - Austin Health'
+    ]
+]
